@@ -1,3 +1,12 @@
+## -------------------------------------------------------------------------------- DOWNLOAD ONCE
+pip3 install argcomplete
+activate-global-python-argcomplete
+autoload -U bashcompinit
+bashcompinit
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
 ## -------------------------------------------------------------------------------- ALIAS
 ## APT
 alias at="sudo apt"
@@ -108,20 +117,6 @@ source <(kubectl completion zsh)
 
 ## -------------------------------------------------------------------------------- ETC
 eval "$(register-python-argcomplete my-awesome-script)"
-
-## -------------------------------------------------------------------------------- DOWNLOAD ONCE
-## ARGCOMPLETE
-#pip3 install argcomplete
-#activate-global-python-argcomplete
-#autoload -U bashcompinit
-#bashcompinit
-
-## MANUAL
-## zsh-autosuggestions
-#git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-
-## zsh-syntax-highlighting
-#git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 ## -------------------------------------------------------------------------------- DEFAULT
 # If you come from bash you might have to change your $PATH.
