@@ -15,7 +15,7 @@
     zsh \
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" \
     pip3 install -U pip \
-    scrcpy \
+    net-tools \
     
     ## grub-customizer
     sudo add-apt-repository ppa:danielrichter2007/grub-customizer \
