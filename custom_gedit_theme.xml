@@ -1,0 +1,72 @@
+<style-scheme name="0" id="0" version="1.0">
+  <author>0</author>
+  <description></description>
+
+  <style name="background-pattern"	background="#303030" />
+  <style name="bracket-match"	foreground="#0e8420" bold="true" />
+  <style name="current-line"	background="#303030" />
+  <style name="current-line-number"	foreground="#9A9996" background="#303030" />
+  <style name="cursor"	foreground="#E95420" />
+  <style name="draw-spaces"	foreground="#504E55" />
+  <style name="line-numbers"	foreground="#5E5C64" background="#181818" />
+  <style name="map-overlay"	background="#77767B" />
+  <style name="right-margin"	foreground="#77767B" background="#77767B" />
+  <style name="search-match"	foreground="#FCFCFC" background="#0e8420" />
+  <style name="text"	foreground="#C0BFBC" background="#000000" />
+  <style name="def:base-n-integer"	foreground="#c590bf" />
+  <style name="def:boolean"	foreground="#c590bf" />
+  <style name="def:comment"	foreground="#696969" italic="true" />
+  <style name="def:constant"	foreground="#c590bf" />
+  <style name="def:decimal"	foreground="#c590bf" />
+  <style name="def:deletion"	strikethrough="true" />
+  <style name="def:doc-comment-element"	foreground="#9A9996" />
+  <style name="def:floating-point"	foreground="#c590bf" />
+  <style name="def:function"	foreground="#c590bf" bold="true" />
+  <style name="def:heading"	foreground="#c590bf" bold="true" />
+  <style name="def:keyword"	foreground="#0e8420" bold="true" />
+  <style name="def:link-destination"	foreground="#47c4f1" italic="true" underline="true" />
+  <style name="def:link-text"	foreground="#DE374C" />
+  <style name="def:list-marker"	foreground="#E95420" bold="true" />
+  <style name="def:net-address"	foreground="#47c4f1" underline="true" />
+  <style name="def:number"	foreground="#47c4f1" />
+  <style name="def:preformatted-section"	foreground="#c590bf" />
+  <style name="def:preprocessor"	foreground="#FCFCFC" bold="true" />
+  <style name="def:shebang"	foreground="#b776b0" bold="true" />
+  <style name="def:special-char"	foreground="#EA485C" />
+  <style name="def:string"	foreground="#FBC16A" />
+  <style name="def:strong-emphasis"	bold="true" />
+  <style name="def:type"	foreground="#47c4f1" bold="true" />
+  <style name="def:underlined"	underline="true" />
+  <style name="def:warning"	underline="true" />
+  <style name="c-sharp:format"	foreground="#c590bf" />
+  <style name="c-sharp:preprocessor"	foreground="#FCFCFC" bold="true" />
+  <style name="c:printf"	foreground="#c590bf" />
+  <style name="c:signal-name"	foreground="#EA485C" />
+  <style name="c:storage-class"	foreground="#ED764D" bold="true" />
+  <style name="c:type-keyword"	foreground="#ED764D" bold="true" />
+  <style name="css:id-selector"	foreground="#FCFCFC" bold="true" />
+  <style name="css:property-name"	foreground="#FCFCFC" bold="true" />
+  <style name="css:pseudo-selector"	foreground="#c590bf" bold="true" />
+  <style name="css:selector-symbol"	foreground="#ED764D" bold="true" />
+  <style name="css:type-selector"	foreground="#FCFCFC" bold="true" />
+  <style name="css:vendor-specific"	foreground="#F99B11" />
+  <style name="diff:added-line"	foreground="#0e8420" />
+  <style name="diff:changed-line"	foreground="#ED764D" />
+  <style name="diff:diff-file"	foreground="#47c4f1" />
+  <style name="diff:location"	foreground="#FAA82F" />
+  <style name="diff:removed-line"	foreground="#EA485C" />
+  <style name="go:printf"	foreground="#c590bf" />
+  <style name="python:builtin-function"	foreground="#47c4f1" />
+  <style name="python:class-name"	foreground="#FCFCFC" bold="true" />
+  <style name="python:module-handler"	foreground="#EA485C" />
+  <style name="rust:attribute"	foreground="#c590bf" />
+  <style name="rust:lifetime"	foreground="#F08763" />
+  <style name="rust:macro"	foreground="#c590bf" />
+  <style name="rust:scope"	foreground="#F08763" />
+  <style name="vala:attributes"	foreground="#C0BFBC" />
+  <style name="xml:attribute-name"	foreground="#47c4f1" bold="true" />
+  <style name="xml:attribute-value"	foreground="#FAA82F" />
+  <style name="xml:element-name"	foreground="#c590bf" />
+  <style name="xml:namespace"	foreground="#FAA82F" />
+  <style name="xml:processing-instruction"	foreground="#FAA82F" bold="true" />
+</style-scheme>
