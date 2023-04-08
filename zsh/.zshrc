@@ -1,14 +1,31 @@
 ## -------------------------------------------------------------------------------- DOWNLOAD ONCE
-pip3 install argcomplete
-activate-global-python-argcomplete
-autoload -U bashcompinit
-bashcompinit
+#pip3 install argcomplete
+#activate-global-python-argcomplete
+#autoload -U bashcompinit
+#bashcompinit
 
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+#eval "$(register-python-argcomplete my-awesome-script)"
+
+#git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+#git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 ## -------------------------------------------------------------------------------- ALIAS
-## APT
+## -------------------------------- sys
+alias sudo='sudo '
+
+alias n="nano"
+alias ge="gedit"
+
+alias zs="source ~/.zshrc"
+alias zg="ge ~/.zshrc"
+alias zt="ge ~/.oh-my-zsh/themes/max.zsh-theme "
+
+alias o="xdg-open ."
+
+alias srb="sudo reboot now"
+alias ssd="sudo shutdown now"
+
+## -------------------------------- APT
 alias at="sudo apt"
 
 alias i="at install"
@@ -22,23 +39,7 @@ alias uf="at --fix-broken install"
 alias r="sudo dpkg -r"
 alias re="sudo dpkg --configure -a"
 
-## sys
-alias sz="source ~/.zshrc"
-alias z="sudo gedit ~/.zshrc"
-alias zz="sudo gedit ~/.oh-my-zsh/themes/max.zsh-theme "
-
-alias n="nano"
-alias sn="sudo nano"
-alias g="gedit"
-alias sg="sudo gedit"
-
-alias o="xdg-open ."
-alias so="sudo xdg-open ."
-
-alias rb="sudo reboot now"
-alias sd="sudo shutdown now"
-
-## make
+## -------------------------------- make
 alias mr="make run"
 alias ma="make all"
 alias mar="make all run"
@@ -46,12 +47,11 @@ alias mc="make clean"
 alias mca="make clean all"
 alias mcar="make clean all run"
 
-## pip
+## -------------------------------- pip
 alias p="pip3 install"
 alias pu="pip3 install -U"
 
-
-## SYSTEMD
+## -------------------------------- SYSTEMD
 alias sd="sudo systemctl"
 
 alias sdrl="sd daemon-reload"
@@ -66,8 +66,13 @@ alias sds="sd status"
 alias sdl="sudo journalctl -u"
 alias sdl_d="sudo journalctl --rotate --vacuum-time=1s"
 
-## ESP-IDF
+## -------------------------------- ETC
 alias get_idf='. $HOME/esp/esp-idf/export.sh'
+
+## -------------------------------- CUSTOM
+#alias tp0 = "sudo modprobe -r psmouse && sudo modprobe psmouse"
+#alias tp1 = "/sbin/rmmod i2c_hid && /sbin/modprobe i2c_hid"
+
 
 ## -------------------------------------------------------------------------------- ZSH
 export python="python3"
@@ -91,34 +96,32 @@ ENABLE_CORRECTION="true"
 # make _ and - same : CASE_SENSITIVE must be off
 # HYPHEN_INSENSITIVE="true"
 
-## -------------------------------------------------------------------------------- CUSTOM
-alias tp0 = "sudo modprobe -r psmouse && sudo modprobe psmouse"
-alias tp1 = "/sbin/rmmod i2c_hid && /sbin/modprobe i2c_hid"
-
 ## -------------------------------------------------------------------------------- CONDA
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/z/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/$USER/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/$USER/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/$USER/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
+#__conda_setup="$('/home/$USER/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+#if [ $? -eq 0 ]; then
+#    eval "$__conda_setup"
+#else
+#    if [ -f "/home/$USER/anaconda3/etc/profile.d/conda.sh" ]; then
+#        . "/home/$USER/anaconda3/etc/profile.d/conda.sh"
+#    else
+#        export PATH="/home/$USER/anaconda3/bin:$PATH"
+#    fi
+#fi
+#unset __conda_setup
 
 ## -------------------------------------------------------------------------------- KUBERNETES
 #autoload -Uz compinit
 #compinit
 
-source <(kubectl completion zsh)
+#source <(kubectl completion zsh)
 
 ## -------------------------------------------------------------------------------- ETC
-eval "$(register-python-argcomplete my-awesome-script)"
 
-## -------------------------------------------------------------------------------- DEFAULT
+
+
+
+## -------------------------------------------------------------------------------- ZSH DEFAULT
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -162,4 +165,4 @@ eval "$(register-python-argcomplete my-awesome-script)"
 # fi
 
 # Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+# export ARCHFLAGS="-arch x86_64"z
