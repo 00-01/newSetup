@@ -73,6 +73,9 @@ alias get_idf='. $HOME/esp/esp-idf/export.sh'
 #alias tp0 = "sudo modprobe -r psmouse && sudo modprobe psmouse"
 #alias tp1 = "/sbin/rmmod i2c_hid && /sbin/modprobe i2c_hid"
 
+## -------------------------------- get my WAN ip
+alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
+
 
 ## -------------------------------------------------------------------------------- ZSH
 export python="python3"
