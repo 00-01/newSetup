@@ -1,10 +1,9 @@
 ## 1 install
     sudo apt install dnsmasq
     
-## 2 config
+## 2 edit config
     sudo nano /etc/dnsmasq.conf
-    
-## 3 edit config
+
 ### 1. uncomment
     domain-needed
     bogus-priv
@@ -18,7 +17,7 @@ bogus-priv – Prevents forwarding DNS reverse-lookup queries to the upstream DN
 ### 3. adjust cache
     cache-size=1000
 
-## 4 map hostname to ip
+## 3 map hostname to ip
     sudo nano /etc/hosts
     
 ### 1. add
@@ -26,6 +25,6 @@ bogus-priv – Prevents forwarding DNS reverse-lookup queries to the upstream DN
     192.168.0.101:8000 web-server
     192.168.0.105 gateway.lan
     
-## 5 restart service
+## 4 restart service
     sudo service dnsmasq restart
     sudo service dnsmasq status
