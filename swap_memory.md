@@ -2,6 +2,7 @@
     sudo swapoff /swapfile
     sudo fallocate -l 32G /swapfile  # EDIT HERE
     sudo mkswap /swapfile
+    # sudo mkswap --label SWAP /swapfile  # if no label error
     sudo swapon /swapfile
     
 ## ERROR
