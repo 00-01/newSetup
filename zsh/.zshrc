@@ -25,6 +25,8 @@ alias o="xdg-open ."
 alias srb="sudo reboot now"
 alias ssd="sudo shutdown now"
 
+alias wan="dig +short myip.opendns.com @resolver1.opendns.com"
+
 ## -------------------------------- APT
 alias at="sudo apt"
 
