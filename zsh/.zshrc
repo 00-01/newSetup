@@ -25,8 +25,6 @@ alias o="xdg-open ."
 alias srb="sudo reboot now"
 alias ssd="sudo shutdown now"
 
-alias wan="dig +short myip.opendns.com @resolver1.opendns.com"
-
 ## -------------------------------- APT
 alias at="sudo apt"
 
@@ -68,15 +66,15 @@ alias sds="sd status"
 alias sdl="sudo journalctl -u"
 alias sdl_d="sudo journalctl --rotate --vacuum-time=1s"
 
+## -------------------------------- IP
+alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
+
 ## -------------------------------- ETC
 alias get_idf='. $HOME/esp/esp-idf/export.sh'
 
 ## -------------------------------- CUSTOM
 #alias tp0 = "sudo modprobe -r psmouse && sudo modprobe psmouse"
 #alias tp1 = "/sbin/rmmod i2c_hid && /sbin/modprobe i2c_hid"
-
-## -------------------------------- get my WAN ip
-alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 
 
 ## -------------------------------------------------------------------------------- ZSH
