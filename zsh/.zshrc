@@ -36,6 +36,8 @@ alias ua="u && a"
 alias uy="u -y && sudo snap refresh"
 alias ud="at dist-upgrade"
 alias uf="at --fix-broken install"
+alias uu="uy && ud -y && uf -y"
+
 alias r="sudo dpkg -r"
 alias re="sudo dpkg --configure -a"
 
