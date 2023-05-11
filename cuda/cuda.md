@@ -2,6 +2,7 @@
 ## KEY ERROR
     sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/3bf863cc.pub 
 
+
 # INSTALL CUDA
 ## VERSION 11.3
     wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
@@ -16,7 +17,7 @@
 
 # VERSION CHANGE
 ## 1. Install wanted CUDA Toolkit versions
-    sudo apt-get install cuda-toolkit-{version: 11-3}
+    sudo apt install cuda-toolkit-{version: 11-3}
     
 ## 2. Point symlink /usr/local/cuda to default version
     cd /usr/local
@@ -45,3 +46,10 @@
 ## 7.make sure you add your cuda-X.x lib64 paths    
     export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
     export LD_LIBRARY_PATH="/usr/local/cuda/lib64:/usr/local/cuda-10.1/lib64:/usr/local/cuda-11/lib64:/usr/local/cuda-11.1/lib64:/usr/local/cuda-11.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
+
+
+
+# INSTALL CUDA, cuDNN for tf and pytorch
+1. install CUDA
+2. install cuDNN
+3. install nvidia-cuda-toolkit
