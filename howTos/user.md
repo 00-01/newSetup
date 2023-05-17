@@ -22,12 +22,12 @@
     su root  # or go to any sudo user
     sudo nano /etc/sudoers
 #### ADD
+>add the above command to like below location in the file
+>#User privilege specification
+>root     ALL=(ALL:ALL) ALL
+>NEW_USER ALL=(ALL:ALL) ALL
     NEW_USER ALL=(ALL)  ALL
 
-add the above command to like below location in the file
-#User privilege specification
-root     ALL=(ALL:ALL) ALL
-NEW_USER ALL=(ALL:ALL) ALL
 
 # REF
 https://linuxize.com/post/how-to-create-users-in-linux-using-the-useradd-command/
