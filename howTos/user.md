@@ -26,6 +26,7 @@
 > #User privilege specification  
 > root     ALL=(ALL:ALL) ALL   
 > NEW_USER ALL=(ALL:ALL) ALL  
+
     NEW_USER ALL=(ALL)  ALL
 
 
