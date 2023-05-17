@@ -21,8 +21,8 @@
     USERNAME ALL=(ALL)  ALL
 
 add the above command to like below location in the file
-#User privilege specification
-root     ALL=(ALL:ALL) ALL
+#User privilege specification \n
+root     ALL=(ALL:ALL) ALL \n
 USERNAME ALL=(ALL:ALL) ALL
 
 # REF
