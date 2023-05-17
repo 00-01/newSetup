@@ -1,29 +1,33 @@
 # USER
 
 ## new
-    sudo useradd {OPTION: -r(system suer)} {USERNAME}
-    sudo passwd {USERNAME}
+    sudo useradd {OPTION: -r(system suer)} {NEW_USER}
+    sudo passwd {NEW_USER}
     
 ## delete
-    sudo userdel -r username
+    sudo userdel -r NEW_USER
 
 ## list
     cut -f1 -d: /etc/passwd
 
 ## change
-    su {USERNAME}
+    su {NEW_USER}
 
 ## root privilege
-### GOTO
+### 1. easy way
+    sudo usermod -a -G sudo {NEW_USER}
+
+### 2. another way
+#### GOTO
     su root  # or go to any sudo user
     sudo nano /etc/sudoers
-### ADD
-    USERNAME ALL=(ALL)  ALL
+#### ADD
+    NEW_USER ALL=(ALL)  ALL
 
 add the above command to like below location in the file
-#User privilege specification \n
-root     ALL=(ALL:ALL) ALL \n
-USERNAME ALL=(ALL:ALL) ALL
+#User privilege specification
+root     ALL=(ALL:ALL) ALL
+NEW_USER ALL=(ALL:ALL) ALL
 
 # REF
 https://linuxize.com/post/how-to-create-users-in-linux-using-the-useradd-command/
