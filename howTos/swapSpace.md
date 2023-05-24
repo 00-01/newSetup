@@ -10,3 +10,5 @@
     sudo mkswap /swap_file  # enable swap
     free -h
 
+# reference
+    https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-22-04
