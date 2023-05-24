@@ -23,6 +23,7 @@
 
 # reference
 https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-22-04
+https://ubuntuhandbook.org/index.php/2021/08/enable-hibernate-ubuntu-21-10/
 
 
 ## ERROR
