@@ -7,7 +7,7 @@
 # make
     swap_file_name=swap_file
     sudo swapoff /$swap_file_name
-    sudo fallocate -l 32G /swap_file_name  # 32gb (EDIT HERE)
+    sudo fallocate -l 32G /$swap_file_name  # 32gb (EDIT HERE)
     sudo chmod 600 /$swap_file_name  # make private
     sudo mkswap /$swap_file_name  # enable swap
     # sudo mkswap --label SWAP /swapfile  # if no label error
