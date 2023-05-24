@@ -14,6 +14,13 @@
     sudo swapon /$swap_file_name  # enable swap
     free -h
 
+# permenent
+    sudo cp /etc/fstab /etc/fstab.bak
+    echo '/$swap_file_name none swap sw 0 0' | sudo tee -a /etc/fstab
+    
+# tune
+
+
 # reference
 https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-22-04
 
