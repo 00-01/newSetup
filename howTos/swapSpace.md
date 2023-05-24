@@ -5,9 +5,11 @@
     free -h
 
 # make
-    sudo dd if=/dev/zero of=/swap_file bs=8GB count=1  # 8GB size
-    sudo chmod 600 /swap_file  # make private
-    sudo mkswap /swap_file  # enable swap
+    swap_file_name=swap_file
+    sudo dd if=/dev/zero of=/$swap_file_name bs=32GB count=1  # 32GB size
+    sudo chmod 600 /$swap_file_name  # make private
+    sudo mkswap /$swap_file_name  # enable swap
+    sudo swapon /$swap_file_name  # enable swap
     free -h
 
 # reference
