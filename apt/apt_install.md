@@ -17,6 +17,7 @@
     pip3 install -U pip \
     net-tools \
     nomacs \
+    npm \
     
     
     ## grub-customizer
