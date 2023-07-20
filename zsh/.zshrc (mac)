@@ -14,13 +14,15 @@
 alias sudo='sudo '
 
 alias n="nano"
-alias ge="gedit"
 
 alias zs="source ~/.zshrc"
-alias zg="ge ~/.zshrc"
+alias te='open -a TextEdit'
+alias zte='te ~/.zshrc'
+alias zc='code ~/.zshrc'
+
 alias zt="ge ~/.oh-my-zsh/themes/max.zsh-theme "
 
-alias o="xdg-open ."
+alias o="open ."
 
 alias srb="sudo reboot now"
 alias ssd="sudo shutdown now"
@@ -173,3 +175,18 @@ ENABLE_CORRECTION="true"
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"z
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/maxmin/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/maxmin/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/maxmin/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/maxmin/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
