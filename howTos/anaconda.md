@@ -4,9 +4,10 @@
 ### install dependencies
     sudo apt-get install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6   
 ### download
-    wget https://repo.anaconda.com/archive/Anaconda3-2023.07-1-Linux-x86_64.sh
+    anaconda_version=Anaconda3-2023.07-1-Linux-x86_64.sh
+    wget https://repo.anaconda.com/archive/$anaconda_version
 ### install downloaded app
-    bash ~/Downloads/Anaconda3-2020.02-Linux-x86_64.sh
+    sh ./$anaconda_version
 ### init
     conda init zsh
 
