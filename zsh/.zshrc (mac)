@@ -1,4 +1,6 @@
 ## -------------------------------------------------------------------------------- DOWNLOAD ONCE
+#sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # pip3 install argcomplete
 # activate-global-python-argcomplete
 # autoload -U bashcompinit
