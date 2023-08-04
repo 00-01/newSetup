@@ -1,6 +1,4 @@
 ## -------------------------------------------------------------------------------- DOWNLOAD ONCE
-#sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 # pip3 install argcomplete
 # activate-global-python-argcomplete
 # autoload -U bashcompinit
@@ -16,6 +14,7 @@
 alias sudo='sudo '
 
 alias n="nano"
+alias c="code"
 
 alias zs="source ~/.zshrc"
 alias te='open -a TextEdit'
@@ -29,12 +28,14 @@ alias o="open ."
 alias srb="sudo reboot now"
 alias ssd="sudo shutdown now"
 
-## -------------------------------- APT
+## -------------------------------- BREW
 alias bi="brew install --cask"
 alias bs="brew search"
 alias bui="brew uninstall"
 alias bl="brew list"
+alias buu="brew update && brew upgrade"
 alias buuc="brew update && brew upgrade && brew cleanup"
+
 
 ## -------------------------------- make
 alias mr="make run"
@@ -86,6 +87,8 @@ alias get_idf='. $HOME/esp/esp-idf/export.sh'
 #alias tp1 = "/sbin/rmmod i2c_hid && /sbin/modprobe i2c_hid"
 
 export PATH=/opt/homebrew/bin:$PATH
+export PATH=$PATH:"$HOME/fvm/versions/stable/bin"
+export PATH=$PATH:"$HOME/fvm/default/bin"
 
 
 ## -------------------------------------------------------------------------------- ZSH
@@ -117,9 +120,6 @@ ENABLE_CORRECTION="true"
 #compinit
 
 #source <(kubectl completion zsh)
-
-## -------------------------------------------------------------------------------- ETC
-
 
 
 
@@ -168,7 +168,8 @@ ENABLE_CORRECTION="true"
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"z
-# >>> conda initialize >>>
+
+## -------------------------------------------------------------------------------- CONDA
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/Users/maxmin/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
@@ -181,5 +182,6 @@ else
     fi
 fi
 unset __conda_setup
-# <<< conda initialize <<<
+
+## -------------------------------------------------------------------------------- ETC
 
