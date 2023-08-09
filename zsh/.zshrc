@@ -43,6 +43,8 @@ alias uu="uy && ud -y && uf -y"
 alias r="sudo dpkg -r"
 alias re="sudo dpkg --configure -a"
 
+alias ah="sudo apt-mark hold linux-image-generic linux-headers-generic"  ## block kernel update
+
 ## -------------------------------- make
 alias mr="make run"
 alias ma="make all"
