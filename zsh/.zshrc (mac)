@@ -72,7 +72,8 @@ alias lan="echo $lan"
 wan=$(dig +short myip.opendns.com @resolver1.opendns.com)
 alias wan="echo $wan"
 
-alias adbwifi="adb tcpip 5555 && adb connect $lan:5555"
+device=10.20.221.11
+alias adbwifi="adb tcpip 5555 && adb connect $device:5555"
 
 ## -------------------------------- ETC
 alias get_idf='. $HOME/esp/esp-idf/export.sh'
