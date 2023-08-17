@@ -28,8 +28,6 @@ alias o="open ."
 alias srb="sudo reboot now"
 alias ssd="sudo shutdown now"
 
-# alias adbwifi="adb tcpip 5555 && adb connect Smylan:5555"
-
 ## -------------------------------- BREW
 alias bi="brew install --cask"
 alias bu="brew upgrade --cask"
@@ -68,7 +66,13 @@ alias sdl="sudo journalctl -u"
 alias sdl_d="sudo journalctl --rotate --vacuum-time=1s"
 
 ## -------------------------------- IP
-alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
+lan=$(ipconfig getifaddr en0)
+alias lan="echo $lan"
+
+wan=$(dig +short myip.opendns.com @resolver1.opendns.com)
+alias wan="echo $wan"
+
+alias adbwifi="adb tcpip 5555 && adb connect $lan:5555"
 
 ## -------------------------------- ETC
 alias get_idf='. $HOME/esp/esp-idf/export.sh'
@@ -78,8 +82,9 @@ alias get_idf='. $HOME/esp/esp-idf/export.sh'
 #alias tp1 = "/sbin/rmmod i2c_hid && /sbin/modprobe i2c_hid"
 
 export PATH=/opt/homebrew/bin:$PATH
-export PATH=$PATH:"$HOME/fvm/versions/stable/bin"
-export PATH=$PATH:"$HOME/fvm/default/bin"
+export PATH=$HOME/fvm/versions/stable/bin:$PATH
+# export PATH=$HOME/fvm/default/bin:$PATH
+
 
 
 ## -------------------------------------------------------------------------------- ZSH
@@ -176,3 +181,9 @@ unset __conda_setup
 
 ## -------------------------------------------------------------------------------- ETC
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/maxmin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/maxmin/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/maxmin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/maxmin/google-cloud-sdk/completion.zsh.inc'; fi
