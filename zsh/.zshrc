@@ -73,7 +73,7 @@ alias sdl="sudo journalctl -u"
 alias sdl_d="sudo journalctl --rotate --vacuum-time=1s"
 
 ## -------------------------------- IP
-alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
+alias wan='dig +short myip.opendns.com @resolver1.opendns.com'
 
 ## -------------------------------- ETC
 alias get_idf='. $HOME/esp/esp-idf/export.sh'
