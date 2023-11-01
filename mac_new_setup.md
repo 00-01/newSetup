@@ -7,6 +7,9 @@
 	iterm2 /
 	google-chrome /
 	visual-studio-code /
+	android-studio /
+
+ 
 
  ### flutter
  	brew tap leoafarias/fvm
