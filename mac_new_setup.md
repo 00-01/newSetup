@@ -7,3 +7,4 @@
 	iterm2 /
 	google-chrome /
 	visual-studio-code /
+ 	fvm /
