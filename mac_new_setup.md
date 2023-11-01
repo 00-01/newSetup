@@ -18,7 +18,8 @@
  	dart pub global activate fvm
   	
 	fvm install stable
-	 
+
+ 	flutter doctor --android-licenses
  	flutter doctor -v
 
 
