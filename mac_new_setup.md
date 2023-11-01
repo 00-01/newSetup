@@ -1,4 +1,4 @@
-# brew
+# BREW
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 ### apps
@@ -10,7 +10,7 @@
 
  
 
- # flutter (fvm)
+ # FLUTTER (fvm)
  	brew tap leoafarias/fvm
 	brew install fvm
  	
