@@ -14,3 +14,11 @@
  ### flutter
  	brew tap leoafarias/fvm
 	brew install fvm
+ 	
+ 	dart pub global activate fvm
+  	
+	fvm install stable
+	 
+ 	flutter doctor -v
+
+
