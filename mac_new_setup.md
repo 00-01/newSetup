@@ -1,8 +1,8 @@
-### install brew
+### brew
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 
-### install apps
+### brew apps
 	brew install --cask /
 	iterm2 /
 	google-chrome /
