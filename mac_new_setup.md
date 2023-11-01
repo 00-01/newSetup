@@ -1,12 +1,11 @@
 # BREW
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-### apps
+## apps
 	brew install --cask /
 	iterm2 /
 	google-chrome /
 	visual-studio-code /
-	android-studio /
 
  
 
@@ -18,6 +17,7 @@
   	
 	fvm install stable
 
+	brew install android-studio
  	brew install cocoapods
 
  	flutter doctor --android-licenses
