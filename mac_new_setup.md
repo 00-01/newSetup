@@ -1,8 +1,7 @@
-### brew
+# brew
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-
-### brew apps
+### apps
 	brew install --cask /
 	iterm2 /
 	google-chrome /
@@ -11,7 +10,7 @@
 
  
 
- ### flutter (fvm)
+ # flutter (fvm)
  	brew tap leoafarias/fvm
 	brew install fvm
  	
