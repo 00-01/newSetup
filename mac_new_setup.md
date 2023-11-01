@@ -7,4 +7,7 @@
 	iterm2 /
 	google-chrome /
 	visual-studio-code /
- 	fvm /
+
+ ### flutter
+ 	brew tap leoafarias/fvm
+	brew install fvm
