@@ -47,8 +47,9 @@ alias mca="make clean all"
 alias mcar="make clean all run"
 
 ## -------------------------------- pip
-alias p="pip install"
-alias pu="pip install -U"
+alias pip='pip3'
+alias p="pip3 install"
+alias pu="pip3 install -U"
 
 ## -------------------------------- SYSTEMD
 alias sd="sudo systemctl"
