@@ -8,6 +8,9 @@
 # autoload -U bashcompinit
 # bashcompinit
 
+## thefuck
+# pip install thefuck
+
 ## FZF
 # git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 #  ~/.fzf/install
@@ -23,7 +26,7 @@
 alias sudo='sudo '
 
 alias n="nano"
-alias ge="gedit"
+alias g="gedit"
 
 alias zs="source ~/.zshrc"
 alias zg="ge ~/.zshrc"
@@ -91,7 +94,6 @@ alias get_idf='. $HOME/esp/esp-idf/export.sh'
 
 
 ## -------------------------------------------------------------------------------- ZSH
-export python="python3"
 # Path to oh-my-zsh installation.
 export ZSH="/home/$USER/.oh-my-zsh"
 
@@ -120,8 +122,7 @@ ENABLE_CORRECTION="true"
 #source <(kubectl completion zsh)
 
 ## -------------------------------------------------------------------------------- ETC
-
-
+export python="python3"
 
 
 ## -------------------------------------------------------------------------------- ZSH DEFAULT
