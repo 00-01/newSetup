@@ -3,10 +3,15 @@
 
 ## apps
 	brew install --cask /
-	iterm2 /
+ 	android-studio /
+	android-platform-tools /
+  	cyberduck /
+    	dbeaver-community /
 	google-chrome /
+ 	iterm2 /
+   	nomachine /
+      	postman /
 	visual-studio-code /
-
  
 
  # FLUTTER (fvm)
