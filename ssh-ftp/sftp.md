@@ -19,5 +19,14 @@
         # PermitTunnel no
         # AllowAgentForwarding no
 
+# Mount Disk (in need)
+### create mount loc
+    sudo mkdir /home/guest/mnt
+### bind the mount
+    sudo mount --bind /media/{USER}/{TARGET_DISK} /home/guest/mnt
+
+## ADD to "/etc/fstab"
+    /media/{USER}/{TARGET_DISK} /home/guest/mnt none bind 0 0
+
 # restart sshd
     sudo service sshd restart
