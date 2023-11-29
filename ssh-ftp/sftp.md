@@ -3,11 +3,9 @@
     sudo passwd guest
     # sudo usermod -aG sftpgroup sftpuser
 
-# make chroot jail
+# set chroot jail
     sudo chown root:root /home/guest
     sudo chmod 755 /home/guest
-    sudo service sshd restart
-
 
 # config sshd
     sudo nano /etc/ssh/sshd_config
@@ -21,3 +19,5 @@
         # PermitTunnel no
         # AllowAgentForwarding no
 
+# restart sshd
+    sudo service sshd restart
