@@ -1,24 +1,24 @@
 # make user
-    sudo adduser sftpuser
-    sudo passwd sftpuser
-    sudo usermod -aG sftpgroup sftpuser
+    sudo adduser guest
+    sudo passwd guest
+    # sudo usermod -aG sftpgroup sftpuser
 
 
 # config
     sudo nano /etc/ssh/sshd_config
 
 ### add
-    Match User sftpuser
+    Match User guest
+        ChrootDirectory /home/guest
         ForceCommand internal-sftp
-        PasswordAuthentication yes
-        ChrootDirectory $HOME
-        PermitTunnel no
-        AllowAgentForwarding no
         AllowTcpForwarding no
         X11Forwarding no
+        # PasswordAuthentication yes
+        # PermitTunnel no
+        # AllowAgentForwarding no
 
 ### command
-    sudo chown sftpuser:sftpuser $HOME
-    sudo chmod 755 $HOME
+    sudo chown root:root /home/guest
+    sudo chmod 755 /home/guest
     sudo service sshd restart
 
