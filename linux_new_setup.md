@@ -1,7 +1,8 @@
 sudo apt update && sudo apt upgrade
 
 ## ---------------------------------------------------------------- APT
-
+sudo apt install \
+net-tools \
 
 
 
