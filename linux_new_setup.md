@@ -13,7 +13,6 @@
     nomacs \
     npm \
     python3-pip python3-venv python3-dev \
-    pip3 install -U pip \
     sshpass \
     terminator \
     zsh \
@@ -72,8 +71,8 @@
 
 
 
-## ---------------------------------------------------------------- 
-
+## ---------------------------------------------------------------- PYTHON
+    pip3 install -U pip
 
 
 
