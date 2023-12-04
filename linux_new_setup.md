@@ -12,6 +12,7 @@
     net-tools \
     nomacs \
     npm \
+    openssh-server \
     python3-pip python3-venv python3-dev \
     sshpass \
     terminator \
