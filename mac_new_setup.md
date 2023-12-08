@@ -12,6 +12,7 @@
    	nomachine /
       	postman /
 	visual-studio-code /
+ 	zoom /
 
 ## migrate brew
 ### creates currently-installed Brewfile in current directory
