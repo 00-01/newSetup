@@ -6,13 +6,26 @@
  	android-studio /
 	android-platform-tools /
   	cyberduck /
-    	dbeaver-community /
+	dbeaver-community /
 	google-chrome /
  	iterm2 /
+  	mongodb-compass /
    	nomachine /
-      	postman /
+	postman /
 	visual-studio-code /
+ 	vlc /
+  	wireshark /
  	zoom /
+
+### extra
+ 	airdroid /
+  	cocoapods /
+  	notion /
+   	gimp /
+	redisinsight /
+   	temurin /
+  	webtorrent /
+
 
 ## migrate brew
 ### creates currently-installed Brewfile in current directory
