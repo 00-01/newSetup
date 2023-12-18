@@ -1,17 +1,17 @@
 # Set up SSH Keys for GitHub (if not already done):
-### Check for existing SSH keys
+### 0. Check for existing SSH keys
     ls -al ~/.ssh
 Look for files named either id_rsa.pub, id_ed25519.pub, or similar
-### If you don't have an existing key, or you want to create a new one,
+### 1. If no existing key or to create new one
     ssh-keygen -t rsa -b 4096 -C "{your_email@example.com}"
 When prompted to "Enter a file in which to save the key," press Enter to save it in the default location.
-### Start the SSH agent in the background
+### 2. Start SSH agent in background
     eval "$(ssh-agent -s)"
-### Add SSH private key to the SSH agent
+### 3. Add SSH private key to SSH agent
     ssh-add ~/.ssh/id_rsa  ## or the appropriate file name
-### Copy your SSH public key to the clipboard
+### 4. Copy SSH public key to clipboard
     pbcopy < ~/.ssh/id_rsa.pub
-### Go to GitHub, navigate to "Settings", then to "SSH and GPG keys", and click on "New SSH key" to add your new key. Paste your key into the field.
-
-# Clone Repository
+### 5. Add key to GitHub
+navigate to "Settings" -> "SSH and GPG keys" -> click "New SSH key" -> Paste key into the field.
+### 6. Clone Repository
     Click on the "Code" button and select the "SSH" option. Copy the SSH URL provided
