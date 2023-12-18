@@ -1,7 +1,7 @@
 # Set up SSH Keys for GitHub (if not already done):
 ### Check for existing SSH keys
-> Look for files named either id_rsa.pub, id_ed25519.pub, or similar
     ls -al ~/.ssh
+Look for files named either id_rsa.pub, id_ed25519.pub, or similar
 ### If you don't have an existing key, or you want to create a new one,
     ssh-keygen -t rsa -b 4096 -C "{your_email@example.com}"
 When prompted to "Enter a file in which to save the key," press Enter to save it in the default location.
