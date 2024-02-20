@@ -14,6 +14,9 @@
 
 # WIRELESS CONNECT
 1. connect phone <-> pc via usb
-2. $ adb tcpip 5555
-3. $ adb connect {PHONE_LAN}:5555
-4. $ scrcpy
+2. set adp port
+    adb tcpip 5555
+3. set target
+    adb connect {PHONE_LAN_IP}:5555
+4. start
+    scrcpy
