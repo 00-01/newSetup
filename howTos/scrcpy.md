@@ -12,7 +12,16 @@
 ### developer mode -> usb debug to true (Settings > About phone and tap Build number seven times. Return to the previous screen to find Developer options at the bottom.)
 
 
-# WIRELESS CONNECT (writing)
+# WIRELESS CONNECT
+1. connect phone, pc via usb
+2. adb tcpip 5555
+3. adb connect DEVICE_IP:5555 (replace DEVICE_IP)
+4. scrcpy
+
+
+
+
+
 The application communicates with the device over adb, so it should be easy to make it work wirelessly: Connect to a device over Wi-Fi.
 
 It was not counting on an adb bug preventing adb reverse to work over a connection established by adb connect.
